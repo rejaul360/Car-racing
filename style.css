@@ -1,0 +1,131 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Josefin Slab', serif;
+}
+
+.buttons {
+   overflow: hidden;
+   width: 100%;
+}
+
+#pauseBtn,
+#playBtn {
+   overflow: hidden;
+   /* width: 8%; */
+   color: black;
+   padding: 1rem 1.5rem;
+   border: none;
+   border-radius: 0.25rem;
+   cursor: pointer;
+   font-weight: bold;
+
+   transition: background-color 0.3s;
+}
+
+.carGame {
+   height: 100%;
+   width: 100%;
+   background-image: url(treen.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+
+.buttons {
+   position: absolute;
+   top: 100px;
+   /* margin-top: 500px; */
+   left: 40px;
+   background: #f34c4c;
+   width: 300px;
+   line-height: 70px;
+   color: rgb(31, 43, 60);
+   font-weight: 700;
+   margin-top: 10px;
+   font-size: 1.5rem;
+   font-weight: bolder;
+   text-transform: uppercase;
+   text-align: center;
+   border-radius: 5px;
+   box-shadow: 0 5px 5px #777;
+}
+
+.scoor {
+   position: absolute;
+   top: 15px;
+   left: 40px;
+   background: #026534;
+   width: 300px;
+   line-height: 70px;
+   color: white;
+   font-weight: 700;
+   margin-top: 10px;
+   font-size: 1.5rem;
+   font-weight: bolder;
+   border-radius: 5px;
+   text-align: center;
+   box-shadow: 0 5px 5px #777;
+}
+
+.hide {
+   display: none;
+}
+
+.car,
+.enemy {
+   width: 50px;
+   height: 80px;
+   position: absolute;
+   bottom: 80px;
+   left: 20px;
+   right: 15px;
+   background: yellow;
+   background-image: url(abc_n.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   border-radius: 10px;
+
+}
+
+.gameArea {
+   width: 400px;
+   height: 100vh;
+   background: rgb(31, 43, 60);
+   margin: auto;
+   position: relative;
+   overflow: hidden;
+   border-right: 7px dashed #f8fbff;
+   border-left: 7px dashed #f8fbff;
+}
+
+.startScreen {
+   position: absolute;
+   background-color: #ee5253;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: whitesmoke;
+   text-align: center;
+   z-index: 1;
+   border: 1px solid #ff6b6b;
+   margin: auto;
+   width: 50%;
+   cursor: pointer;
+   font-family: carfont;
+   letter-spacing: 5;
+   font-size: 20px;
+   word-spacing: 3;
+   line-height: 30px;
+   text-transform: uppercase;
+   border-radius: 5px;
+   box-shadow: 0 5px 5px #777;
+   padding: 20px;
+}
+
+.lines {
+   width: 10px;
+   height: 100px;
+   background: whitesmoke;
+   position: absolute;
+   margin-left: 200px;
+}
